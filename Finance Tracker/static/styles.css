@@ -1,0 +1,111 @@
+/* General Body and Layout Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+main {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Container for the content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+    border: 1px solid #ddd; /* Add border around the entire table */
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd; /* Add borders between cells */
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #f8f9fa;
+}
+
+/* Row Hover Effect */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Empty table handling */
+tbody tr.empty-row td {
+    text-align: center;
+    font-style: italic;
+    color: #aaa;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
